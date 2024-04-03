@@ -4,7 +4,6 @@ from .models import Form
 from django.contrib import messages
 from django.core.mail import EmailMessage
 
-# Create your views here.
 # we are creating a function to lead to the index.html file
 
 # here, we are are going to capture the values of the job application form
@@ -37,4 +36,6 @@ def index(request):
             messages.success(request, "Form submitted successfully!")
     return render(request, "index.html")
 
+def about(request):
+    return render(request, "about.html")
 
